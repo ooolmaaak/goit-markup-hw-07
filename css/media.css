@@ -1,0 +1,97 @@
+/* HEADER */
+
+@media screen and (min-width: 428px) {
+}
+
+@media screen and (min-width: 768px) {
+}
+
+@media screen and (min-width: 1440px) {
+}
+
+/* HERO */
+
+@media screen and (min-width: 428px) {
+}
+
+@media screen and (min-width: 768px) {
+}
+
+@media screen and (min-width: 1440px) {
+}
+
+/* STUDIO */
+
+@media screen and (min-width: 428px) {
+}
+
+@media screen and (min-width: 768px) {
+}
+
+@media screen and (min-width: 1440px) {
+}
+
+/* SERVICERS */
+
+@media screen and (min-width: 428px) {
+}
+
+@media screen and (min-width: 768px) {
+}
+
+@media screen and (min-width: 1440px) {
+}
+
+/* TEAM - CONTACTS */
+
+@media screen and (min-width: 428px) {
+  .container {
+    max-width: 294px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 552px;
+  }
+
+  .contacts-item {
+    width: calc((100% - 24px) / 2);
+  }
+
+  .contacts-list {
+    gap: 72px 24px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .container {
+    max-width: 1158px;
+  }
+
+  .contacts-item {
+    width: calc((100% - 72px) / 4);
+  }
+}
+
+/* COSTUMERS */
+
+@media screen and (min-width: 428px) {
+}
+
+@media screen and (min-width: 768px) {
+}
+
+@media screen and (min-width: 1440px) {
+}
+
+/* FOOTER */
+
+@media screen and (min-width: 428px) {
+}
+
+@media screen and (min-width: 768px) {
+}
+
+@media screen and (min-width: 1440px) {
+}
