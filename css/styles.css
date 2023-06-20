@@ -180,7 +180,7 @@ body {
   display: block;
   justify-content: center;
   align-items: center;
-  margin-top: 48px;
+  margin-top: 72px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -190,8 +190,8 @@ body {
 }
 
 .hero {
-  padding-top: 188px;
-  padding-bottom: 188px;
+  padding-top: 112px;
+  padding-bottom: 112px;
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
@@ -207,13 +207,13 @@ body {
 .title-main {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
-  font-size: 56px;
-  line-height: 1.07;
+  font-size: 36px;
+  line-height: 1.1;
   text-align: center;
   letter-spacing: 0.02em;
   color: #ffffff;
   margin: 0 auto;
-  max-width: 496px;
+  max-width: 320px;
 }
 
 .hero-container {
@@ -235,48 +235,51 @@ body {
   border-radius: 4px;
 }
 
-.title-block {
-  font-family: "Roboto", sans-serif;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.11;
-  text-align: center;
-  letter-spacing: 0.02em;
-  text-transform: capitalize;
-  color: #2e2f42;
-  margin-bottom: 72px;
-}
-
 .item-subltitle {
   font-family: "Roboto", sans-serif;
-  font-weight: 500;
+  font-weight: 700;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  text-align: center;
 }
 
 .item-description {
   font-family: "Roboto", sans-serif;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
 }
 
+.studio .item-subltitle {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.1;
+  letter-spacing: 0.02em;
+  color: #434455;
+}
+
 .studio {
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding-top: 96px;
+  padding-bottom: 96px;
 }
 
 .studio-list {
   display: flex;
-  gap: 24px;
+  flex-wrap: wrap;
+  gap: 72px;
 }
 
-.studio-item {
-  width: calc((100% - 72px) / 4);
+.studio-list .icon-area {
+}
+
+.studio-container {
+  max-width: 396px;
+  /* width: calc((100% - 72px) / 4); */
 }
 
 .studio-item .item-subltitle {
@@ -300,6 +303,18 @@ body {
   border: 1px solid #e7e9fc;
 }
 
+.title-block {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: #2e2f42;
+  margin-bottom: 72px;
+}
+
 /* CONTACTS */
 
 .contacts {
@@ -312,6 +327,9 @@ body {
   display: flex;
   flex-wrap: wrap;
   gap: 72px;
+  max-width: 264px;
+  align-items: center;
+  margin: auto;
 }
 
 .contacts-item {
@@ -339,9 +357,6 @@ body {
 
 .item-text .item-description {
   margin-bottom: 8px;
-}
-
-.item-text .item-description {
   text-align: center;
 }
 
@@ -349,12 +364,6 @@ body {
   display: flex;
   justify-content: center;
   gap: 24px;
-}
-
-.footer-social-list {
-  display: flex;
-  justify-content: center;
-  gap: 16px;
 }
 
 .social-media-link {
@@ -381,17 +390,23 @@ body {
 
 .customers {
   background-color: #ffffff;
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding-top: 96px;
+  padding-bottom: 96px;
+}
+
+.costumers-container {
+  max-width: 428px;
 }
 
 .customers-list {
   display: flex;
-  gap: 24px;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
 }
 
 .customers-item {
-  width: calc((100% - 120px) / 6);
+  width: calc((100% - 16px) / 2);
   height: 88px;
   border-width: 1px;
 }
@@ -424,26 +439,24 @@ body {
 
 .footer {
   background-color: #2e2f42;
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 96px;
+  padding-bottom: 96px;
 }
 
 .footer-container {
   display: flex;
-  align-items: baseline;
+  max-width: 428px;
+  /* align-items: baseline; */
+  flex-direction: column;
+  align-items: center;
+  gap: 72px;
 }
 
 .footer-logo-area {
-  margin-right: 120px;
-}
-
-.footer-description {
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: #f4f4fd;
+  /* margin-right: 120px; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .footer-logo {
@@ -460,13 +473,31 @@ body {
   display: inline-block;
 }
 
+.footer-description {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #f4f4fd;
+}
+
 .footer-logo-text {
   color: #f4f4fd;
 }
 
 .footer-social-media {
-  display: block;
+  /* display: block; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 208px;
+}
+
+.footer-social-list {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
 }
 
 .footer-subtitle {
@@ -502,21 +533,29 @@ body {
 .footer-form-container {
   display: flex;
   flex-direction: column;
-  margin-left: 80px;
+  /* margin-left: 80px; */
+  align-items: center;
+  width: 100%;
+}
+
+.footer-input-label {
+  width: 100%;
 }
 
 .footer-form {
   display: flex;
-  flex-direction: row;
+  /* flex-direction: row; */
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 24px;
+  gap: 16px;
+  width: 100%;
 }
 
 .footer-form-input {
-  width: 264px;
   height: 40px;
   border: 1px solid #ffffff;
+  opacity: 30%;
   background-color: transparent;
   font-size: 12px;
   line-height: 1.5;
@@ -526,6 +565,7 @@ body {
   border-radius: 4px;
   color: #ffffff;
   margin: auto;
+  width: 100%;
 }
 
 .footer-form-input::placeholder {
